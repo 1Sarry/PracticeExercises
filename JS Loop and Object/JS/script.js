@@ -20,7 +20,7 @@
 // 12
 
 // function nextFiveNumbers(a) {
-//   for (i = a + 1; i <= a + 5; i++) 
+//   for (i = a + 1; i <= a + 5; i++)
 //   console.log(i);
 // }
 // nextFiveNumbers(4);
@@ -52,7 +52,7 @@
 // function printArrayElement() {
 //   let a = [1, "Hello", 8, 44];
 //   for(i=0; i<a.length; i++){
-//   console.log(a[i]) 
+//   console.log(a[i])
 //   }
 // }
 // printArrayElement(printArrayElement);
@@ -77,8 +77,6 @@ Test case 2: Given the array a = ["world", 13], output should be: 2
 // ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // 3 + 0
 
-
-
 //var a = [5, 6, 99, 8, 76, 4, 68, 44];
 // var a =[3, 0];
 // function sumArrayElements(a){
@@ -89,8 +87,6 @@ Test case 2: Given the array a = ["world", 13], output should be: 2
 //   console.log(sum)
 // }
 // sumArrayElements(a)
-
-
 
 // Question 7
 // ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
@@ -112,7 +108,7 @@ Test case 2: Given the array a = ["world", 13], output should be: 2
 //     }
 //     else if (a[i] % 2 !== 0){
 //       sumOdd = sumOdd + a[i];
-//     }   
+//     }
 //   }
 //   var difference =  sumEven - sumOdd ;
 //   console.log(difference);
@@ -148,7 +144,6 @@ car */
 // Questions 9 and 10 are dependent on the sampleArray provided below:
 // let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 
-
 // Question 9
 // Write a function that takes the sampleArray as a parameter, removes the last element from the array,
 // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
@@ -173,7 +168,6 @@ car */
 //   console.log(sampleArray)
 // }
 // sortArray(sampleArray)
-
 
 /*
 The questions below ( questions 11 to 14) are based on the "evangadiClass" object provided below.
@@ -212,7 +206,6 @@ sex: "F"
 }
  */
 
-
 /*
 Question 11
 ● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
@@ -220,7 +213,6 @@ console
 ○ // Use the dot notation "." to call the property you want to change
 
 */
-
 
 // let evangadiClass = {
 //   lengthOfCourse: "1 Month",
@@ -254,12 +246,12 @@ console
 //   sex: "F"
 //   }
 //   ]
-//   } 
+//   }
 //   evangadiClass.lengthOfCourse="5 Month";
 //   evangadiClass.topicsCovered.push("bootstrap")
 //   console.log(evangadiClass)
 
-  /*
+/*
   Question 12
 Add "Bootstrap" at the end of the topicsCovered property and print the new object on the
 console
@@ -305,7 +297,7 @@ age of the class. Print the result on the console
 //   sex: "F"
 //   }
 //   ]
-//   } 
+//   }
 //  function ageAverage(x){
 //   var sum= 0;
 //   for (i=0; i<x.students.length; i++){
@@ -316,16 +308,15 @@ age of the class. Print the result on the console
 //  }
 //  ageAverage(evangadiClass)
 
- /*Question 14
+/*Question 14
 ● Write a function that takes the "evangadiClass" object as an argument and calculates the
 percentage of male students in the class. Print the result on the console*/
 
-// - create a function that takes an argument 
+// - create a function that takes an argument
 // - compute no of female students
 // - compute no of male students
 // - compute total no of students
 // - compute percentage = (no of Male / Total)*100%
-
 
 // total number of students = students.length
 // total no of M = sum of students.sex === "M"
@@ -337,46 +328,137 @@ let evangadiClass = {
   isChallenging: false,
   topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
   students: [
-  {
-  name: "Abebe",
-  age: 34,
-  sex: "M"
-  },
-  {
-  name: "Kebede",
-  age: 44,
-  sex: "M"
-  },
-  {
-  name: "Almaz",
-  age: 27,
-  sex: "F"
-  },
-  {
-  name: "Challa",
-  age: 22,
-  sex: "M"
-  },
-  {
-  name: "Chaltu",
-  age: 19,
-  sex: "F"
+    {
+      name: "Abebe",
+      age: 34,
+      sex: "M",
+    },
+    {
+      name: "Kebede",
+      age: 44,
+      sex: "M",
+    },
+    {
+      name: "Almaz",
+      age: 27,
+      sex: "F",
+    },
+    {
+      name: "Challa",
+      age: 22,
+      sex: "M",
+    },
+    {
+      name: "Chaltu",
+      age: 19,
+      sex: "F",
+    },
+  ],
+};
+
+// check the array how many objects are there that have the key sex set as "M"
+// length of the array is equal to the total number of students.
+// function malePercentage(x) {
+//   var totalM = 0;
+//   for (i=0; i<x.students.length; i++){
+//     if(x.students.sex == "M"){
+//        var totalM =x.students.length
+//     }
+//   }
+//   console.log(totalM)
+//   var totalStudents = console.log(evangadiClass.students.length);
+
+//   var percentage = (totalM/totalStudents)*100;
+//   console.log(percentage + "%")
+// }
+// malePercentage(evangadiClass);
+
+// a test function: returns age that is less that 18
+// function checkMinor(age) {
+//   return age < 18;
+// }
+
+// const ageArray = [34, 23, 20, 26, 12];
+
+// // checks whether ageArray contains any element that is less than 18
+// let check = ageArray.some(checkMinor);
+
+// console.log(check);
+
+/*
+
+Question 15: Test the divisors of three
+
+● Write a function that takes 2 parameters: a low and high number. Your goal is to print all
+numbers (on the console) between low and high, and for each of these numbers print
+whether or not the number is divisible by 3. If the number is divisible by 3, print the word
+"div3" directly after the number.
+
+ */
+// if (typeof a != "number" || typeof b != "number" ) {
+//      return "Please enter numbers only!";
+//    }
+
+// - create a function that takes 2 parameters
+// - set validation conditions - inputs must be numbers, inputs cann't be Zero
+// - check if the numbers between the given numbers are divisible by 3
+// - print the number and "div3" after it.
+
+// function divideByThree(a, b) {
+//   for (i = a; i <= b; i++) {
+//     if (typeof a != "number" || typeof b != "number") {
+//       console.log("Please enter numbers only!");
+//     } else if (i % 3 == 0) {
+//       console.log(i + " " + "div3");
+//     }
+//   }
+// }
+// divideByThree(3, 15);
+
+/*
+Question 16: The famous coding interview question (FizzBuzz)
+Write a function that prints in the console the numbers from 1 to 100. But for multiples of
+three print “Fizz” instead of the number and for the multiples of five print “Buzz” and for
+numbers which are multiples of both three and five print "FizzBuzz".
+
+
+*/
+
+function fizzBuzz() {
+  for (i = 1; i <= 25; i++) {
+    if (i % 3 == 0) {
+      console.log(i + " " + "Fizz");
+    } else if (i % 5 == 0) {
+      console.log(i + " " + "buzz");
+    } else if (i % 3 == 0 && i % 5 == 0) {
+      console.log(i + " " + "FizzBuzz");
+    }
   }
-  ]
-  } 
+}
+fizzBuzz();
 
+/*
 
- function malePercentage(x){
-       var totalF =0;
-       var totalM= 0;
-        for (i=0; i<x.studets.length; i++){
-          if(x.students.sex === "F"){
-            totalF = x.students.length;
-          }
-          else {
-           totalM=x.students.length; 
-          }
-        }
-        console.log(totalF)
- }
- malePercentagey(evangadiClass)
+Question 19: Evens number
+● An Evens number is an integer whose digits are all even. For example 2426 is an Evens
+number but 3224 is not. Write a function named isEvens that prints on the console 1 if its
+integer argument is an Evens number. The function prints 0 otherwise.  
+
+*/
+
+function isEvens(x) {
+  if (typeof x !== "number") {
+    console.log("Please enter numbers only!");
+    return;
+  }
+  if ((x == 0)) {
+    console.log("number must be different from zero");
+    return;
+  }
+  if (!Number.isInteger(x)) {
+    console.log("Number must be an integer");
+    return;
+  }
+  console.log("hii there")
+}
+isEvens(1320);
