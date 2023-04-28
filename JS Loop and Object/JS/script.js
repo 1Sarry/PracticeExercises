@@ -331,49 +331,52 @@ percentage of male students in the class. Print the result on the console*/
 // total no of M = sum of students.sex === "M"
 // total no of F = sum of students.sex === "F"
 
-// let evangadiClass = {
-//   lengthOfCourse: "1 Month",
-//   website: "https://www.evangadi.com/",
-//   isChallenging: false,
-//   topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
-//   students: [
-//   {
-//   name: "Abebe",
-//   age: 34,
-//   sex: "M"
-//   },
-//   {
-//   name: "Kebede",
-//   age: 44,
-//   sex: "M"
-//   },
-//   {
-//   name: "Almaz",
-//   age: 27,
-//   sex: "F"
-//   },
-//   {
-//   name: "Challa",
-//   age: 22,
-//   sex: "M"
-//   },
-//   {
-//   name: "Chaltu",
-//   age: 19,
-//   sex: "F"
-//   }
-//   ]
-//   } 
+let evangadiClass = {
+  lengthOfCourse: "1 Month",
+  website: "https://www.evangadi.com/",
+  isChallenging: false,
+  topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+  students: [
+  {
+  name: "Abebe",
+  age: 34,
+  sex: "M"
+  },
+  {
+  name: "Kebede",
+  age: 44,
+  sex: "M"
+  },
+  {
+  name: "Almaz",
+  age: 27,
+  sex: "F"
+  },
+  {
+  name: "Challa",
+  age: 22,
+  sex: "M"
+  },
+  {
+  name: "Chaltu",
+  age: 19,
+  sex: "F"
+  }
+  ]
+  } 
 
 
-//  function malePercentage(x){
-//        var totalF =0;
-//        var totalM= 0;
-//         for (i=0; i<x.studets.length; i++){
-//           if(x.students.sex === "F"){
-//             totalF = x.students.length;
-//           }
-//         }
-//         console.log(totalF)
-//  }
-//  malePercentage(evangadiClass)
+ function malePercentage(x){
+       var totalF =0;
+       var totalM= 0;
+        for (i=0; i<x.studets.length; i++){
+          if(x.students.sex === "F"){
+            totalF = x.students.length;
+          }
+          else {
+           totalM=x.students.length; 
+          }
+        }
+        console.log(totalF)
+ }
+ malePercentagey(evangadiClass)
