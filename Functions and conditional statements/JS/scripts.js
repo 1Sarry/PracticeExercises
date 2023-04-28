@@ -103,22 +103,25 @@ eg.
 */
 function animalsLeg(h, c, p) {
   if (typeof h != "number" || typeof c != "number" || typeof p != "number") {
-    return "Please enter numbers only!";
+    console.log("Please enter numbers only!");
+    return;
   }
   if (h <= "0 " || c <= "0" || p <= "0") {
-    return "number must be greater than zero";
+    console.log("number must be greater than zero");
+    return;
   }
   if (!Number.isInteger(h) || !Number.isInteger(c) || !Number.isInteger(p)) {
-    return "Number must be an integer";
+    console.log("Number must be an integer");
+    return;
+  } else {
+    var chickenLegs = h * 2;
+    var cowLegs = c * 4;
+    var pigLegs = p * 4;
+    var totalLegs = chickenLegs + cowLegs + pigLegs;
+    return totalLegs;
   }
-  var chickenLegs = h * 2;
-  var cowLegs = c * 4;
-  var pigLegs = p * 4;
-  var totalLegs = chickenLegs + cowLegs + pigLegs;
-  return totalLegs;
 }
 animalsLeg(2, 1, 1);
-
 var totalAnimalLegs;
 totalAnimalLegs = animalsLeg(2, 2, 1);
 console.log(totalAnimalLegs);
@@ -141,12 +144,12 @@ check the length of the array
 5. return the result
 */
 
-var num = array[y, 4];
+var num = [y, 4];
 
 function takesArray(num) {
   var result = 3 * x[0];
   return result;
- }
+}
 
 takesArray(num[0]);
 
@@ -251,28 +254,25 @@ Create a function that returns
 
 /* Using Switch */
 
+// const score = 85;
+// switch (true) {
+//   case score > 100 || score < 0:
+//     console.log("Invalid Score");
+//     break;
+//   case score >= 90 && score <= 100:
+//     console.log("Grade A");
+//     break;
+//   case score >= 80 || score <= 89:
+//     console.log("Grade B");
+//     break;
+//   case score < 79:
+//     console.log("Grade c");
+//     break;
+//   default:
+//     console.log("No Grade");
+// }
 
-
-  // const score = 85;
-  // switch (true) {
-  //   case score > 100 || score < 0:
-  //     console.log("Invalid Score");
-  //     break;
-  //   case score >= 90 && score <= 100:
-  //     console.log("Grade A");
-  //     break;
-  //   case score >= 80 || score <= 89:
-  //     console.log("Grade B");
-  //     break;
-  //   case score < 79:
-  //     console.log("Grade c");
-  //     break;
-  //   default:
-  //     console.log("No Grade");
-  // }
-
-
-function studentGrade(score){
+function studentGrade(score) {
   switch (true) {
     case score > 100 || score < 0:
       console.log("Invalid Score");
@@ -289,9 +289,8 @@ function studentGrade(score){
     default:
       console.log("Error");
   }
-
 }
-studentGrade(79)
+studentGrade(79);
 
 //console.log((x));
 
