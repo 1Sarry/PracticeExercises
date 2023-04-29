@@ -156,6 +156,8 @@ car */
 // }
 // arrayFunction(sampleArray)
 
+
+
 // Question 10
 // Write a function that takes the sampleArray as an argument, sorts the array in ascending order
 // and prints the sorted array on the console
@@ -163,11 +165,41 @@ car */
 // You should use this sorting syntax - sort(function(a, b){return a-b});
 
 // let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
-// function sortArray(sampleArray){
-//   sampleArray.sort(function(a, b){return a-b});
+ function sortArray(sampleArray){
+   sampleArray.sort(function(a, b){
+      if (a>b)return 1;
+      if (a<b) return -1;
+      return 0;
+ })
+ console.log(sampleArray)
+}
+  sortArray([5, 6, 99, 8, 76, 4, 68, 44])
+sortArray(["a","c","b"])
+
+
+
+
+  // using sort(function(a, b){return a-b});
+  //let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
+//   function sortArray(sampleArray){
+//     sampleArray.sort(function(a, b){
+//       return a-b
+//     });
 //   console.log(sampleArray)
+//  }
+//    //sortArray([5, 6, 99, 8, 76, 4, 68, 44])
+//    sortArray(["a","c","b"])
+
+// Using Arrow 
+// function arr(x){
+// var sortArr=["a", "b", "a", "c"]
+// sortArr.sort((a,b)=>(a < b ? -1 : 1))
+//   return sortArr;
+
 // }
-// sortArray(sampleArray)
+// console.log(sortArr)
+// arr(x)
+
 
 /*
 The questions below ( questions 11 to 14) are based on the "evangadiClass" object provided below.
@@ -214,42 +246,43 @@ console
 
 */
 
-// let evangadiClass = {
-//   lengthOfCourse: "1 Month",
-//   website: "https://www.evangadi.com/",
-//   isChallenging: false,
-//   topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
-//   students: [
-//   {
-//   name: "Abebe",
-//   age: 34,
-//   sex: "M"
-//   },
-//   {
-//   name: "Kebede",
-//   age: 44,
-//   sex: "M"
-//   },
-//   {
-//   name: "Almaz",
-//   age: 27,
-//   sex: "F"
-//   },
-//   {
-//   name: "Challa",
-//   age: 22,
-//   sex: "M"
-//   },
-//   {
-//   name: "Chaltu",
-//   age: 19,
-//   sex: "F"
-//   }
-//   ]
-//   }
-//   evangadiClass.lengthOfCourse="5 Month";
-//   evangadiClass.topicsCovered.push("bootstrap")
-//   console.log(evangadiClass)
+let evangadiClass = {
+  lengthOfCourse: "1 Month",
+  website: "https://www.evangadi.com/",
+  isChallenging: false,
+  topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+  students: [
+  {
+  name: "Abebe",
+  age: 34,
+  sex: "M"
+  },
+  {
+  name: "Kebede",
+  age: 44,
+  sex: "M"
+  },
+  {
+  name: "Almaz",
+  age: 27,
+  sex: "F"
+  },
+  {
+  name: "Challa",
+  age: 22,
+  sex: "M"
+  },
+  {
+  name: "Chaltu",
+  age: 19,
+  sex: "F"
+  }
+  ]
+  }
+  evangadiClass.lengthOfCourse="5 Month";
+  //evangadiClass.topicsCovered.push("bootstrap")
+  var add =[...evangadiClass.topicsCovered,"Bootstrap"]   // Using Spread Operator.
+  console.log(add)
 
 /*
   Question 12
@@ -304,12 +337,13 @@ age of the class. Print the result on the console
 //       sum+= x.students[i].age
 //   }
 //   var average= sum/x.students.length
-//   console.log(sum)
+//   console.log(average)
+
 //  }
 //  ageAverage(evangadiClass)
 
 /*Question 14
-● Write a function that takes the "evangadiClass" object as an argument and calculates the
+Write a function that takes the "evangadiClass" object as an argument and calculates the
 percentage of male students in the class. Print the result on the console*/
 
 // - create a function that takes an argument
@@ -322,39 +356,39 @@ percentage of male students in the class. Print the result on the console*/
 // total no of M = sum of students.sex === "M"
 // total no of F = sum of students.sex === "F"
 
-let evangadiClass = {
-  lengthOfCourse: "1 Month",
-  website: "https://www.evangadi.com/",
-  isChallenging: false,
-  topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
-  students: [
-    {
-      name: "Abebe",
-      age: 34,
-      sex: "M",
-    },
-    {
-      name: "Kebede",
-      age: 44,
-      sex: "M",
-    },
-    {
-      name: "Almaz",
-      age: 27,
-      sex: "F",
-    },
-    {
-      name: "Challa",
-      age: 22,
-      sex: "M",
-    },
-    {
-      name: "Chaltu",
-      age: 19,
-      sex: "F",
-    },
-  ],
-};
+// let evangadiClass = {
+//   lengthOfCourse: "1 Month",
+//   website: "https://www.evangadi.com/",
+//   isChallenging: false,
+//   topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+//   students: [
+//     {
+//       name: "Abebe",
+//       age: 34,
+//       sex: "M",
+//     },
+//     {
+//       name: "Kebede",
+//       age: 44,
+//       sex: "M",
+//     },
+//     {
+//       name: "Almaz",
+//       age: 27,
+//       sex: "F",
+//     },
+//     {
+//       name: "Challa",
+//       age: 22,
+//       sex: "M",
+//     },
+//     {
+//       name: "Chaltu",
+//       age: 19,
+//       sex: "F",
+//     },
+//   ],
+// };
 
 // check the array how many objects are there that have the key sex set as "M"
 // length of the array is equal to the total number of students.
@@ -430,8 +464,11 @@ function fizzBuzz() {
       console.log(i + " " + "Fizz");
     } else if (i % 5 == 0) {
       console.log(i + " " + "buzz");
-    } else if (i % 3 == 0 && i % 5 == 0) {
+    } else if (i % 3 === 0 && i % 5 === 0) {
       console.log(i + " " + "FizzBuzz");
+    }
+    else{
+      console.log(i)
     }
   }
 }
@@ -439,26 +476,26 @@ fizzBuzz();
 
 /*
 
-Question 19: Evens number
+Question 17: Evens number
 ● An Evens number is an integer whose digits are all even. For example 2426 is an Evens
 number but 3224 is not. Write a function named isEvens that prints on the console 1 if its
 integer argument is an Evens number. The function prints 0 otherwise.  
 
 */
 
-function isEvens(x) {
-  if (typeof x !== "number") {
-    console.log("Please enter numbers only!");
-    return;
-  }
-  if ((x == 0)) {
-    console.log("number must be different from zero");
-    return;
-  }
-  if (!Number.isInteger(x)) {
-    console.log("Number must be an integer");
-    return;
-  }
-  console.log("hii there")
-}
-isEvens(1320);
+// function isEvens(x) {
+//   if (typeof x !== "number") {
+//     console.log("Please enter numbers only!");
+//     return;
+//   }
+//   if ((x == 0)) {
+//     console.log("number must be different from zero");
+//     return;
+//   }
+//   if (!Number.isInteger(x)) {
+//     console.log("Number must be an integer");
+//     return;
+//   }
+//   console.log("hii there")
+// }
+// isEvens(1320);
