@@ -1,0 +1,12 @@
+** DOM is the exact same html but it is represented as a javascript object.
+
+Methods: functions --> document.querySelector('h1')
+"Sub" Objects: {h1}.addEventListener(...)
+Properties: .style.color = "red
+ 
+
+
+Document Parsing: parse XML or HTML source code from a string into a DOM Document 
+
+ Manipulating DOM
+ 

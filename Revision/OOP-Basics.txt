@@ -1,0 +1,84 @@
+#1 What is data model?
+  *** It represents data and the relationships of real world entities in a single structure known us Object.
+  ***way of organizing data.
+  ***OOdata model - commonly used data model.
+
+#2 Components of object-oriented data model:
+  Object - Properties - Method - Event - Class
+
+     -Object - the thing we describe. Ex. Shape (Parent Object)
+        - Circle, Rectangle, Triangle ( Child Objects )
+     -Attributes(radius, length, height, breadth)- properties of the object.
+
+     -Method (GetArea, GetPerimeter) - behaviour of the object - what does it do - it is a function usually restricted to the object.   
+    -Events - how does it interact
+            - an action  or occurrence that happens with in an object that the object needs to respond.
+             ex. click buttons
+
+    - Class: blueprint of an object, it defines all the methods and all the different properties that our objects can have. (just a holder for what our object is going to look like) // Object : instantiated version of a class that has all the data filled in like the values for the properties and methods. 
+       eg. House - Blueprint - class
+                 - what color the house will be, furnitures,..... Object 
+
+            
+
+*New - Key word .... take a class and turn it into an object.
+   
+
+# OOP
+the use of objects to represent real world things to our JS.
+
+# Objects in JS: 
+    - literal _ object-name = {key1: value1, key2: value2};
+      eg. let person = {
+               firstName: 'Abebe',
+               lastName: 'Kebede',
+               someFunction: function () {
+                    return this.firstName;
+                }
+            };
+          -person.firstName
+          -person['firstName']
+          -person. SomeFunction()
+
+
+Array- Index to retrieve data // object - properties - width, height, color ....
+
+
+
+#3 Constructor functions in JavaScript
+  - to initialize or create objects 
+  - blueprint or template
+  - first letter capitalize
+  - "new" operator - create new blank object by calling the constructor function
+  - "this" (= the new object when created) keyword to point at the newly created object. a substitute for a future/new object that will be created using the constructor function:
+
+
+#4 Mostly used built-in JavaScript object (string object)  
+  - String()
+      -Properties
+      -methods
+
+
+
+
+#5 JS properties and Methods
+ Properties: a way for us to get certain information about an object
+
+ Methods (followed by parenthesis) : allow us to do something to the data inside the object.
+ - functions that are part of an object.
+
+
+  var item = "Drink more water";
+  console.log(item.length);
+    o/p =  16 (using length property)
+
+  var item = "Drink more water";
+  console.log(item.indexOf("w"));  
+
+
+#Ternary operator
+  IF condition is true ? then value X : otherwise value Y.
+
+#Arrow
+  
+#...Spread Operator
