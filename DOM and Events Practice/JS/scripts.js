@@ -9,21 +9,33 @@
 
 // Question 2
 
+//2.1
 // const companies = document.getElementById("techCompanies")
 // console.log(companies)
 
-// // using querySelector _ class name - select individual element
-// const companies2 = document.querySelector(" .red")
-// console.log(companies2)
+//2.2
+// const companies = document.querySelector("#techCompanies")
+// console.log(companies)
 
-// // How many tech companies are listed- count
-// const companyCount = document.getElementById("#techCompanies");
-// let count = 0;
-// for (i=0; i<companyCount.length; i++){
-//      count = count++;
-// }
-// console.log(count)
+// var companies = document.querySelectorAll("li")
+// console.log(companies)
 
+// const redClass = document.querySelectorAll(".red")
+// console.log(redClass)
+
+//2.3 
+// const company = document.getElementById("techCompanies")
+// const companies = company.querySelectorAll('ul li ');
+// console.log(companies)
+
+
+//2.4
+const company = document.querySelectorAll('.red')
+ //const classRed = company.getElementsByClassName(".red")
+console.log(company)
+
+const classRed = document.getElementsByClassName("red")
+console.log(classRed)
 // Question 3
 
 // Question 4
