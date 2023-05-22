@@ -56,16 +56,23 @@ console.log(classRed)
  
  
  */
-const sum = document.getElementById("sum");
+// const sum = document.getElementById("sum");
 
 
-function addNums() {
-let fName = document.getElementsByName("first-value").value;
-let sName = document.getElementsByName("second-name").value;
-  if (isNaN(fName) && isNaN(sName)) {
-    console.log("Please enter numerical values only");
-  } else {
-    console.log("Good");
-  }
-}
-addNums("3", 4);
+// function addNums() {
+// let fName = document.getElementsByName("first-value").value;
+// let sName = document.getElementsByName("second-name").value;
+//   if (isNaN(fName) && isNaN(sName)) {
+//     console.log("Please enter numerical values only");
+//   } else {
+//     console.log("Good");
+//   }
+// }
+// addNums("3", 4);
+
+
+/*Question 1
+    Add a list of radio buttons on the page containing different color options. When a user clicks on one of them, the background of the page should change to the selected color.
+        - Two of the buttons that say "Night mode" and "Sunny Mode". When night mode is chosen, the background should change to black and the texts should change to white. When Sunny mode is chosen, the background should change to light blue and texts should be in black. */
+
+        
