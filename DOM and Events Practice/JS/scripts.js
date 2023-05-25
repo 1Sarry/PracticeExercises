@@ -30,13 +30,16 @@
 
 
 //2.4
-const company = document.querySelectorAll('.red')
- //const classRed = company.getElementsByClassName(".red")
-console.log(company)
+// const company = document.querySelectorAll('.red')
+//  //const classRed = company.getElementsByClassName(".red")
+// console.log(company)
 
-const classRed = document.getElementsByClassName("red")
-console.log(classRed)
-// Question 3
+// const classRed = document.getElementsByClassName("red")
+// console.log(classRed)
+
+
+
+
 
 // Question 4
 
@@ -56,16 +59,101 @@ console.log(classRed)
  
  
  */
-const sum = document.getElementById("sum");
 
 
-function addNums() {
-let fName = document.getElementsByName("first-value").value;
-let sName = document.getElementsByName("second-name").value;
-  if (isNaN(fName) && isNaN(sName)) {
-    console.log("Please enter numerical values only");
-  } else {
-    console.log("Good");
-  }
+
+// const myForm =getElementById("adder")
+// const total = document.getElementById("sum")
+// function addNums(a) {
+//     a.preventDefault();
+// const val1 = document.getElementsByName("first-value").value;
+// const val2 = document.getElementsByName("second-name").value;
+
+ 
+
+// if (val1 && val2 !==NaN) {
+//     let result = val1 + val2;
+//     total.value=result;
+    
+//   } else {
+//     total.textContent("Please enter numerical values only");
+//   }
+  
+//   }
+//   myForm.addEventListener('click', () => {
+//     addNums();
+//   });
+
+
+
+/* Question 1
+    Add a list of 
+    
+        - Two of the buttons that say "Night mode" and "Sunny Mode". When night mode is chosen, the background should change to black and the texts should change to white. When Sunny mode is chosen, the background should change to light blue and texts should be in black.
+ */
+
+
+
+const changeColor =(el) =>{
+  const selected = el.target.value;
+  const textColor = selected ==='black'?'white':'black';
+  document.body.style.backgroundColor=selected;
+  document.body.style.color=textColor
 }
-addNums("3", 4);
+const radBtn =document.querySelectorAll('input[type="radio"]');
+  radBtn.forEach(radio=>{
+    radio.addEventListener('click', changeColor);
+  });
+
+
+
+/*Question 2
+    Create a two functions for each buttons to increase and decrease the value in the middle
+        note: the number shouldn't go below 0 and above 20 */
+
+
+   
+const countDown = document.querySelector(".minus") 
+const countUp = document.querySelector(".plus")
+const countTotal = document.getElementById("number")
+
+ countUp.addEventListener("click", ()=>{
+    let count = parseInt(countTotal.innerText);
+    if(count >=0 && count < 20){
+      count++;
+      countTotal.innerText=count;
+    }
+      //console.log(count)
+ });
+
+countDown.addEventListener("click", () =>{
+  let count =parseInt(countTotal.innerText);
+
+  if(count > 0){
+    count--;
+    countTotal.innerText=count;
+  }
+  //console.log(count)
+} )
+
+//count = (count >= 0 && count<= 20)? count++ : ""; 
+
+/*Question 3
+    Validate the Login form
+
+    Change the background of the input boxes to pink if a user tries to submit empty form for each input box and if all the values are all fulfilled show a message on alert box saying "Form submitted" */
+
+    const name = document.getElementById("name1")
+    const password = document.getElementById("pass")
+    const form = document.getElementById("form")
+
+    form.addEventListener('submit', (el) => {
+      el.preventDefault()
+      if(name1.value === "" || password.value ==""){
+       name1.style.borderColor="pink"
+       password.style.borderColor="pink"
+      }
+      else{
+        alert("Form Submitted")
+      }
+    })
