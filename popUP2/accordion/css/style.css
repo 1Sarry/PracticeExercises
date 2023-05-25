@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.general {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cordian {
+  padding: 10px;
+  width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+}
+.cordian1 {
+  padding: 10px;
+  width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+.cordian2 {
+  padding: 10px;
+  width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.number {
+  padding-right: 10px;
+}
+.title,
+.number {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+.icon {
+  width: 24px;
+  margin-left: auto;
+  stroke: black;
+}
+
+.hidden-box {
+  display: none;
+  grid-column: 2/3;
+  margin-top: 15px;
+}
+.hidden-box .text {
+  line-height: 1.5;
+}
+.hidden-box ul {
+  margin-left: 15px;
+  color: grey;
+  line-height: 1.5;
+}
+.hidden-box1 {
+  display: none;
+  grid-column: 2/3;
+  margin-top: 15px;
+}
+.hidden-box1 .text {
+  line-height: 1.5;
+}
+.hidden-box1 ul {
+  margin-left: 15px;
+  color: grey;
+  line-height: 1.5;
+}
+.hidden-box2 {
+  display: none;
+  grid-column: 2/3;
+  margin-top: 15px;
+}
+.hidden-box2 .text {
+  line-height: 1.5;
+}
+.hidden-box2 ul {
+  margin-left: 15px;
+  color: grey;
+  line-height: 1.5;
+}
+.open {
+  border-top: 4px solid green;
+}
+.open .item .icon {
+  animation: 1s Rotate alternate;
+  transform: rotate(180deg);
+}
+.open .item .title,
+.open .item .number,
+.open .item svg {
+  color: green;
+  stroke: green;
+}
+.open .hidden-box {
+  /* animation: 2s sliddown ease-out; */
+  display: block;
+}
+@keyframes sliddown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes Rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

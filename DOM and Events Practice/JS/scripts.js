@@ -59,7 +59,7 @@
  
  
  */
-
+// 
 
 
 // const myForm =getElementById("adder")
@@ -69,6 +69,18 @@
 // const val1 = document.getElementsByName("first-value").value;
 // const val2 = document.getElementsByName("second-name").value;
 
+
+
+// function addNums() {
+// let fName = document.getElementsByName("first-value").value;
+// let sName = document.getElementsByName("second-name").value;
+//   if (isNaN(fName) && isNaN(sName)) {
+//     console.log("Please enter numerical values only");
+//   } else {
+//     console.log("Good");
+//   }
+// }
+// addNums("3", 4);
  
 
 // if (val1 && val2 !==NaN) {
