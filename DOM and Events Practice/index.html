@@ -9,7 +9,7 @@
 
   </head>
   <body>
-    <h1>DOM Manipulation Practice</h1>
+    <!-- <h1>DOM Manipulation Practice</h1>
 
     <h4>For Question 1:</h4>
     <div id="sample1">
@@ -53,7 +53,7 @@
     <hr>
     <h4>For Question 4:</h4>
     <h5>Sum of two numbers</h5>
-    <form id="adder" action="#" method="POST">
+    <form id="adder" action="#" method="POST" onsubmit="return addNums();">
       <div class="form-values">
         <p>
           First value<br />
@@ -65,11 +65,59 @@
         </p>
       </div>
       <br />
-      <button id="submitButton" type="submit">Add</button>
+      <button id="submitButton" type="submit" >Add</button>
     </form>
     <br />
     <div id="sum">Result will be displayed here</div>
-    <br />
+    <br /> -->
+
+
+    <div class="color-option">
+      <h3>Change the color of radio buttons using CSS </h3>
+      <div>
+        <input type="radio" name="color" value="blue" id="blue">
+        <label for="blue">Blue</label>
+    </div>
+    <div>
+        <input type="radio" name="color" value="green" id="green">
+        <label for="green">Green</label>
+    </div>
+    <div>
+        <input type="radio" name="color" value="purple" id="puple">
+        <label for="puple">Purple</label>
+    </div>
+    <div>
+        <input type="radio" name="color" value="aqua" id="light-blue">
+        <label for="light-blue">Light-blue</label>
+    </div>
+    <div>
+        <input type="radio" name="color" value="black" id="black">
+        <label for="black">Black</label>
+    </div>
+    </div>
+<!--  Increment Decrement-->
+
+    <div class="plus-minus">
+      <button class="minus">-</button>
+      <span id="number">0</span>
+      <button class="plus">+</button>
+    </div>
+
+
+
+<!--  Form Validation -->
+<div class="form-valid" >
+  <form action="" id="form">
+    <label for="fname">First Name</label>
+    <input type="text" placeholder="First Name" id="name1" name="fname" class="pink">
+    <label for="lname">Last Name</label>
+    <input type="text" placeholder="Last Name" id="name-2" name="lname" class="pink">
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="pass" name="password" class="pink">
+    <button type="submit" id="submit-btn">Submit</button>  
+  </form>
+</div>
+
     
   <script src="./JS/scripts.js"></script>
   </body>
