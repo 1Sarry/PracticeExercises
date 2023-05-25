@@ -15,10 +15,15 @@
   flex-direction: column;
   gap: 10px;
 }
+
+/* Error Message*/
+
 #form .form-item p {
   font-size: 12px;
   display: none;
 }
+
+
 #form .form-item input {
   padding: 10px;
   width: 100%;
@@ -27,7 +32,11 @@
   margin: 0 auto;
   width: 90px;
   padding: 8px 16px;
+  cursor: pointer;
 }
+
+/**/
+
 .form-input-error {
   border: none;
   border: 1px solid red;
